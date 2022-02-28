@@ -9,4 +9,18 @@ function average (array){
     }
     return sum/array.length
 }
+const avgDolphins = average(dolphins)
 
+console.log(avgDolphins)
+
+const avgKoalas = average(koalas)
+
+console.log(avgKoalas)
+
+if(avgKoalas > avgDolphins){
+    console.log("Koalas win!")
+} else if(avgKoalas < avgDolphins){
+    console.log("Dolphins win!")
+} else {
+    console.log("It's a tie!")
+}
