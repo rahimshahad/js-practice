@@ -1,9 +1,9 @@
-const calcAverage = (scores) =>{
+const calcAverage = (scores) => {
     let sum = 0;
-    for (i = 0; i < scores.length; i++){
+    for (i = 0; i < scores.length; i++) {
         sum += scores[i]
     }
-    return sum/scores.length
+    return sum / scores.length
 }
 
 const dolphinsScores = [85, 54, 41]
@@ -14,12 +14,12 @@ const koalasAvg = calcAverage(koalasScores)
 
 console.log(dolphinsAvg, koalasAvg)
 
-function checkWinner(dolphinsAvg, koalasAvg){
-    if(dolphinsAvg >= koalasAvg *2){
+function checkWinner(dolphinsAvg, koalasAvg) {
+    if (dolphinsAvg >= koalasAvg * 2) {
         console.log(`Dolphins win (${dolphinsAvg} vs ${koalasAvg})`)
-    } else if (koalasAvg >= dolphinsAvg *2){
+    } else if (koalasAvg >= dolphinsAvg * 2) {
         console.log(`Koalas win (${koalasAvg} vs ${dolphinsAvg})`)
-    } else{
+    } else {
         console.log("There is no winner")
     }
 }
