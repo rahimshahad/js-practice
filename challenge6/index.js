@@ -26,3 +26,12 @@ console.log(tip(bills))
 
 const tipsCup = tip(bills)
 
+function total(bills, tips){
+    let total = []
+    for (let i = 0; i < bills.length; i++){
+        total.push(bills[i] + tips[i])
+    }
+   return total
+}
+
+console.log(total(bills, tipsCup))
