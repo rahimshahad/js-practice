@@ -35,3 +35,4 @@ function total(bills, tips){
 }
 
 console.log(total(bills, tipsCup))
+
